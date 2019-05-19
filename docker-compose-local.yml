@@ -1,0 +1,60 @@
+version: '3.2'
+services: 
+  database:
+    image: wilgares/postgres:1.0.0
+    container_name: mydatabase
+    environment:
+      - POSTGRES_DB=mydb
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "8088:5432"
+    networks:
+      - demo
+    healthcheck:
+      test: "exit 0"
+          
+          
+  backend:
+    image: wilgares/backend:1.0.0
+    container_name: mybackend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    restart: always
+    networks:
+      - demo
+    depends_on:
+      - backend-pais
+  
+  backend-pais:
+    image: wilgares/backend-pais:1.0.0
+    container_name: mybackend-pais
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    restart: always
+    networks:
+      - demo
+    depends_on:
+      - database  
+  frontend:
+    image: wilgares/frontend:1.0.0
+    container_name: myfrontend
+    ports:
+      - 8080:80  
+      
+networks:
+  demo:
+    # Use a custom driver
+    driver: bridge            
+           
+
+      
+ 
+### ejecutar docker desde linea de comandos
+###docker run --name my-mysql -p 33060:3306 -e MYSQL_DATABASE=farmacia -e MYSQL_USER=root -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7 

@@ -1,0 +1,24 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+/Backend-Docker/.idea
+/Backend-Docker/*.iws
+/Backend-Docker/*.iml
+/Backend-Docker/*.ipr
+
+### NetBeans ###
+/Backend-Docker/nbproject/private/
+/Backend-Docker/build/
+/Backend-Docker/nbbuild/
+/Backend-Docker/dist/
+/Backend-Docker/nbdist/
+/Backend-Docker/.nb-gradle/

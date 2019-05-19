@@ -1,0 +1,1 @@
+insert into PAIS (descripcion) values ('PERU');

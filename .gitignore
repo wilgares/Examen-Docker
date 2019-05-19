@@ -1,0 +1,95 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+
+
+
+
+
+### Frontend
+# compiled output
+/Frontend-Docker/dist
+/Frontend-Docker/tmp
+/Frontend-Docker/out-tsc
+
+# dependencies
+/Frontend-Docker/node_modules
+
+# IDEs and editors
+/Frontend-Docker/.idea
+/Frontend-Docker.project
+/Frontend-Docker.classpath
+/Frontend-Docker.c9/
+/Frontend-Docker*.launch
+/Frontend-Docker.settings/
+/Frontend-Docker*.sublime-workspace
+
+# IDE - VSCode
+/Frontend-Docker/.vscode/*
+/Frontend-Docker/!.vscode/settings.json
+/Frontend-Docker/!.vscode/tasks.json
+/Frontend-Docker/!.vscode/launch.json
+/Frontend-Docker/!.vscode/extensions.json
+
+# e2e
+/Frontend-Docker/e2e/*.js
+/Frontend-Docker/e2e/*.map
+
+# System Files
+/Frontend-Docker/.DS_Store
+/Frontend-Docker/Thumbs.db
+
+
+## BACKEND-DOCKER
+# Maven 
+/Backend-Docker/target/
+
+# IntelliJ project files 
+/Backend-Docker/*.iml
+/Backend-Docker/*.iws
+/Backend-Docker/*.ipr
+/Backend-Docker/.idea/
+
+# eclipse project file
+/Backend-Docker/.settings/
+/Backend-Docker/.classpath
+/Backend-Docker/.project
+
+
+## BACKEND-DOCKERCOUNTRY
+# Maven 
+/Backend-Docker-Country/target/
+
+# IntelliJ project files 
+/Backend-Docker-Country/*.iml
+/Backend-Docker-Country/*.iws
+/Backend-Docker-Country/*.ipr
+/Backend-Docker-Country/.idea/
+
+# eclipse project file
+/Backend-Docker-Country/.settings/
+/Backend-Docker-Country/.classpath
+/Backend-Docker-Country/.project
+
