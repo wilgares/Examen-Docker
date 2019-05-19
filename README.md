@@ -66,7 +66,7 @@ http://localhost:8080
 
 
 ## Detener los servicios
-docker service rm backend backend-pais database frontend
+docker service rm wgm_backend wgm_backend-pais wgm_database wgm_frontend
 
 
 
