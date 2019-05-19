@@ -1,4 +1,4 @@
-package com.devglan.userportal;
+package com.will.docker;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
