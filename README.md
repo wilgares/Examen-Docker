@@ -61,6 +61,8 @@ docker push wilgares/frontend:1.0.0
 ## localizarse en la carpeta Examen-Docker/
 docker stack deploy -c docker-compose-swarm.yml  wgm
 
+## abrir un navegador y ejecutar:
+http://localhost:8080
 
 
 ## Detener los servicios
