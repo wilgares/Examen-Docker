@@ -70,11 +70,13 @@ docker service rm wgm_backend wgm_backend-pais wgm_database wgm_frontend
 
 
 
-#### si se desea levantar el proyecto sin swarm
-#### ===========================================
+# si se desea levantar el proyecto sin swarm
+# ===========================================
 ## levantar el proyecto docker
 ##Ingresar a la carpeta Proyecto_Entregable
+
 docker-compose --file docker-compose-local.yml pull
+
 docker-compose --file docker-compose-local.yml up -d
 
 ## Detener los contenedores.
